@@ -1,5 +1,7 @@
 Bangladesh Garment Factory Analysis
 
+![Average Employees by City](avg_employees_by_city_chart.png)
+
 I worked with a BGMEA-listed dataset of ~3,763 garment factories across Bangladesh, covering factory type, employee counts, location, and production details.
 
 Before analysis, I found significant data quality issues: 72 factories had blank factory_type entries where the city field also contained full street addresses instead of city names — these were excluded from city-level analysis. The factiry_location_in_city column itself contained dozens of one-off full addresses mixed in with real city names, so I filtered the analysis to only include cities backed by at least 5 factories, to avoid misleading averages from tiny samples.
